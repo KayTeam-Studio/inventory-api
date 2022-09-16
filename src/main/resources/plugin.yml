@@ -1,0 +1,6 @@
+name: inventory-api
+version: '${project.version}'
+main: org.kayteam.inventoryapi.InventoryApi
+api-version: 1.13
+authors: [ SoyAldo ]
+website: https://kayteam.org
