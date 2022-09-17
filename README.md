@@ -30,4 +30,4 @@ dependencies {
 Check the last released version in Releases section
 
 ## How to use
-https://github.com/KayTeam-Studio/input-api/wiki
+https://github.com/KayTeam-Studio/inventory-api/wiki
