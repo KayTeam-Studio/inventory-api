@@ -6,7 +6,7 @@
 
     <groupId>org.kayteam</groupId>
     <artifactId>inventory-api</artifactId>
-    <version>0.0.1</version>
+    <version>1.0.1</version>
     <packaging>jar</packaging>
 
     <name>inventory-api</name>
