@@ -196,9 +196,13 @@ public class InventoryBuilder {
 
             GetItem getItem = getItem(slot);
 
-            ItemStack itemStack = getItem.getItem();
+            if ( getItem != null ) {
 
-            inventory.setItem(slot, itemStack);
+                ItemStack itemStack = getItem.getItem();
+
+                inventory.setItem(slot, itemStack);
+
+            }
 
         }
 

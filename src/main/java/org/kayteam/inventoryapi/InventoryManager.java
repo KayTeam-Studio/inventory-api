@@ -89,19 +89,7 @@ public class InventoryManager {
 
             Inventory inventory = Bukkit.createInventory( null , inventoryBuilder.getRows() * 9 , inventoryBuilder.getTitle() );
 
-            for ( int slot = 0 ; slot < (inventoryBuilder.getRows() * 9) ; slot++ ) {
-
-                GetItem getItem = inventoryBuilder.getItem(slot);
-
-                if ( getItem != null ) {
-
-                    ItemStack itemStack = getItem.getItem();
-
-                    inventory.setItem(slot, itemStack);
-
-                }
-
-            }
+            inventoryBuilder.onReload();
 
             inventoryBuilder.setInventory(inventory);
 
