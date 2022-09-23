@@ -89,15 +89,19 @@ public class InventoryManager {
 
             Inventory inventory = Bukkit.createInventory( null , inventoryBuilder.getRows() * 9 , inventoryBuilder.getTitle() );
 
-            inventoryBuilder.onReload();
-
             inventoryBuilder.setInventory(inventory);
 
             Server server = javaPlugin.getServer();
 
             BukkitScheduler bukkitScheduler = server.getScheduler();
 
-            bukkitScheduler.runTaskLater(javaPlugin, () -> player.openInventory(inventory) , 1L);
+            bukkitScheduler.runTaskLater(javaPlugin, () -> {
+
+                player.openInventory(inventory);
+
+                inventoryBuilder.onReload();
+
+            } , 1L);
 
             if ( inventoryBuilder.getUpdateInterval() > 0 ) {
 
