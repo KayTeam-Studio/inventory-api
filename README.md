@@ -24,7 +24,7 @@ repositories {
 
 ```groovy
 dependencies {
-    implementation 'com.github.KayTeam-Studio:action-api:VERSION'
+    implementation 'com.github.KayTeam-Studio:inventory-api:VERSION'
 }
 ```
 Check the last released version in Releases section
